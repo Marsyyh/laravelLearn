@@ -148,12 +148,6 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
-        //self addon 
-        Collective\Html\HtmlServiceProvider::class,
-
-
-        //self addon end
-
         /*
          * Application Service Providers...
          */
@@ -207,13 +201,6 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
-        // self addon
-        'Form' => Collective\Html\FormFacade::class,
-        'Html' => Collective\Html\HtmlFacade::class,
-
-        // self addon end
-
 
     ],
 

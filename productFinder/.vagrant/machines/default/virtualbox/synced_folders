@@ -1,1 +1,0 @@
-{"virtualbox":{"/home/vagrant/productfinder":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/productfinder","hostpath":"/Users/yangyanhong/Documents/laravelLearn/productFinder","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/yangyanhong/Documents/laravelLearn/productFinder","disabled":false,"__vagrantfile":true}}}

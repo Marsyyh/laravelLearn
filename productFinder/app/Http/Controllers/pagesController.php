@@ -14,6 +14,6 @@ class pagesController extends Controller
     		'first' => 'Ares',
     		'last'	=> '<span style="color:red;">Yang</span>'
     	];
-    	return view('pages.about')->with($name);
+    	return view('pages.about',$name);
     }
 }

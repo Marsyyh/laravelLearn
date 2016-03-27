@@ -21,6 +21,29 @@ Route::get('contact','welcomeController@contact');
 
 Route::get('about','pagesController@about');
 
+//Transfer data from url trying
+
+
+Route::get('hello/{name?}',function($yum="haha"){
+	$tmp = [];
+	$tmp['wow'] = $yum;
+	return view('hello',$tmp);
+});
+
+
+// Laravel MVC workflow trying
+
+Route::get('article','articleController@index');
+
+Route::get('article/create','articleController@create');
+
+Route::get('article/{id}','articleController@show');
+
+
+// handle post request
+Route::post('article','articleController@store');
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
