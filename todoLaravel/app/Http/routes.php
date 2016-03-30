@@ -12,5 +12,28 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
+
+Route::get('login', function () {
+    return view('login');
+});
+
+Route::get('registration',function(){
+	return view('registration');
+});
+
+
+Route::get('todo/home','todoController@home');
+
+Route::get('todo/update','todoController@update');
+
+Route::get('logout','todoAuthController@logout');
+
+
+
+Route::post('registration','registController@create');
+
+Route::post('todo/home','todoController@postHandler');
+
+Route::post('login','todoAuthController@doLogin');
