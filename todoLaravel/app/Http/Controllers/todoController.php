@@ -19,7 +19,7 @@ class todoController extends Controller
 
 
 	public function home(){
-		$tasks = \App\todo::where('user_id',Auth::id())->get()->toArray();
+		$tasks = Auth::user()->todos->toArray();
 		return view('todo.home',compact('tasks'));
 
 	}
